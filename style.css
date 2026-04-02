@@ -323,6 +323,13 @@ img {
     font-size: clamp(3rem, 5vw, 4.5rem);
     color: white;
     margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-title-alt {
+    color: var(--clr-accent);
+    font-style: italic;
+    font-size: clamp(2.5rem, 4vw, 4rem);
 }
 
 .hero-desc {
@@ -335,6 +342,7 @@ img {
 .hero-btns {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* Features */
@@ -374,6 +382,296 @@ img {
 .feature-desc {
     color: var(--clr-text-light);
     font-size: 0.9rem;
+}
+
+/* Mountain Section */
+.mountain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.mountain-card {
+    background: var(--clr-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.mountain-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.mountain-img-wrap {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.mountain-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mountain-card:hover .mountain-img-wrap img {
+    transform: scale(1.06);
+}
+
+.mountain-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--clr-accent);
+    color: white;
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.mountain-badge-red {
+    background: #c0392b;
+}
+
+.mountain-badge-green {
+    background: var(--clr-primary-light);
+}
+
+.mountain-info {
+    padding: 1.5rem;
+}
+
+.mountain-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--clr-primary);
+}
+
+.mountain-info p {
+    color: var(--clr-text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e8f5e9 100%);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.contact-card {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    color: var(--clr-primary);
+}
+
+.contact-card p {
+    color: var(--clr-text-light);
+    font-size: 0.9rem;
+    max-width: 240px;
+}
+
+.contact-card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 104, 255, 0.15);
+}
+
+.contact-card-icon-fb {
+    background: #1877f2;
+}
+
+.contact-card-icon-phone {
+    background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-hover));
+}
+
+.qr-wrapper {
+    background: #f8f9fa;
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    border: 2px solid #e8ecef;
+}
+
+.qr-code {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+}
+
+.qr-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0068FF;
+}
+
+.fb-preview {
+    background: #f0f2f5;
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.fb-preview-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.fb-preview-icon {
+    font-size: 2rem;
+}
+
+.fb-preview-inner strong {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--clr-primary);
+}
+
+.fb-preview-inner p {
+    font-size: 0.8rem;
+    color: var(--clr-text-light);
+    margin: 0;
+}
+
+.phone-big {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--clr-primary);
+    font-family: var(--ff-display);
+    letter-spacing: 1px;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.contact-btn-zalo {
+    background: #0068FF;
+    color: white;
+}
+
+.contact-btn-zalo:hover {
+    background: #0054cc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 104, 255, 0.3);
+}
+
+.contact-btn-fb {
+    background: #1877f2;
+    color: white;
+}
+
+.contact-btn-fb:hover {
+    background: #1555b0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(24, 119, 242, 0.3);
+}
+
+.contact-btn-phone {
+    background: var(--clr-accent);
+    color: white;
+}
+
+.contact-btn-phone:hover {
+    background: var(--clr-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(196, 140, 70, 0.3);
+}
+
+.contact-phone {
+    font-size: 0.85rem;
+    color: var(--clr-text-light);
+    margin: 0;
+}
+
+/* Footer Socials */
+.footer-socials {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-fb {
+    background: #1877f2;
+    color: white;
+}
+
+.social-fb:hover {
+    background: #1555b0;
+    transform: translateY(-2px);
+}
+
+.social-zalo {
+    background: #0068FF;
+    color: white;
+}
+
+.social-zalo:hover {
+    background: #0054cc;
+    transform: translateY(-2px);
 }
 
 /* Products Section */
@@ -473,6 +771,7 @@ img {
     margin-bottom: 1.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -702,5 +1001,23 @@ img {
 
     50% {
         box-shadow: 0 4px 24px rgba(0, 104, 255, 0.7);
+    }
+}
+
+.float-facebook {
+    background: #1877f2;
+    color: white;
+    animation: pulse-fb 3s infinite;
+}
+
+@keyframes pulse-fb {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 16px rgba(24, 119, 242, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 24px rgba(24, 119, 242, 0.7);
     }
 }
