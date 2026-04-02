@@ -1,14 +1,17 @@
 :root {
     /* Colors */
-    --clr-primary: #1e452a; /* Deep forest green */
+    --clr-primary: #1e452a;
+    /* Deep forest green */
     --clr-primary-light: #2c6e41;
-    --clr-accent: #c48c46; /* Earthy golden brown */
+    --clr-accent: #c48c46;
+    /* Earthy golden brown */
     --clr-accent-hover: #b07c3c;
-    --clr-bg: #faf9f6; /* Off-white / cream background */
+    --clr-bg: #faf9f6;
+    /* Off-white / cream background */
     --clr-surface: #ffffff;
     --clr-text: #2c312e;
     --clr-text-light: #64746a;
-    
+
     --clr-badge-fresh: #4caf50;
     --clr-badge-premium: #1a1a1a;
     --clr-badge-rare: #c48c46;
@@ -16,25 +19,27 @@
     /* Typography */
     --ff-display: 'Playfair Display', serif;
     --ff-body: 'Plus Jakarta Sans', sans-serif;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 3rem;
     --spacing-xl: 5rem;
-    
+
     /* Transitions & Shadows */
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
-    --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
-    --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -54,7 +59,10 @@ body {
 }
 
 /* Typography Utility */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--ff-display);
     color: var(--clr-primary);
     line-height: 1.2;
@@ -85,7 +93,9 @@ img {
     padding: var(--spacing-xl) 0;
 }
 
-.text-center { text-align: center; }
+.text-center {
+    text-align: center;
+}
 
 /* Buttons */
 .btn {
@@ -116,7 +126,7 @@ img {
 .btn-outline {
     background-color: transparent;
     color: white;
-    border: 1px solid rgba(255,255,255,0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .btn-outline:hover {
@@ -184,7 +194,9 @@ img {
     transition: var(--transition);
 }
 
-.logo-text { letter-spacing: -0.5px; }
+.logo-text {
+    letter-spacing: -0.5px;
+}
 
 .nav-list {
     display: flex;
@@ -210,11 +222,13 @@ img {
     transition: var(--transition);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     opacity: 1;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -266,13 +280,19 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1.05); /* Slight zoom for premium feel */
+    transform: scale(1.05);
+    /* Slight zoom for premium feel */
     animation: slowZoom 20s infinite alternate;
 }
 
 @keyframes slowZoom {
-    from { transform: scale(1.05); }
-    to { transform: scale(1.1); }
+    from {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
 
 .hero-overlay {
@@ -281,7 +301,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .hero-content {
@@ -426,9 +446,17 @@ img {
     letter-spacing: 1px;
 }
 
-.badge-fresh { background-color: var(--clr-badge-fresh); }
-.badge-premium { background-color: var(--clr-badge-premium); }
-.badge-rare { background-color: var(--clr-badge-rare); }
+.badge-fresh {
+    background-color: var(--clr-badge-fresh);
+}
+
+.badge-premium {
+    background-color: var(--clr-badge-premium);
+}
+
+.badge-rare {
+    background-color: var(--clr-badge-rare);
+}
 
 .product-info {
     padding: 1.5rem;
@@ -453,7 +481,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     padding-top: 1rem;
 }
 
@@ -501,7 +529,8 @@ img {
     border-radius: var(--radius-lg);
     overflow: hidden;
     aspect-ratio: 4/5;
-    background-color: #eee; /* placeholder while loading */
+    background-color: #eee;
+    /* placeholder while loading */
 }
 
 .about-img-placeholder img {
@@ -552,7 +581,7 @@ img {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0.6;
     font-size: 0.9rem;
 }
@@ -589,22 +618,89 @@ img {
         transform: none;
         margin: 2rem 1rem;
     }
-    
+
     .features-inner {
         grid-template-columns: 1fr;
         padding: 2rem;
     }
-    
+
     .grid-2-cols {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .nav-list {
-        display: none; /* simple mobile fallback, ideally add hamburger */
+        display: none;
+        /* simple mobile fallback, ideally add hamburger */
+    }
+}
+
+/* Floating Contact Buttons */
+.floating-contacts {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.float-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.float-btn:hover {
+    transform: scale(1.12) translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.float-phone {
+    background: var(--clr-accent);
+    color: white;
+    animation: pulse-phone 2s infinite;
+}
+
+.float-zalo {
+    background: #fff;
+    border: 2px solid #0068FF;
+    padding: 10px;
+    animation: pulse-zalo 2.5s infinite;
+}
+
+@keyframes pulse-phone {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 16px rgba(196, 140, 70, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 24px rgba(196, 140, 70, 0.8);
+    }
+}
+
+@keyframes pulse-zalo {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 16px rgba(0, 104, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 24px rgba(0, 104, 255, 0.7);
     }
 }
