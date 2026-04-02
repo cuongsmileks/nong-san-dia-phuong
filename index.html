@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản Mây | Đặc Sản Nông Sản Vùng Cao</title>
+    <meta name="description"
+        content="Khám phá và thưởng thức các đặc sản cao cấp từ vùng núi Tây Bắc: Rau cải Hmông, Gà đen Hmông, Cá mát, Cá lăng.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍃</span>
+                <span class="logo-text">Bản Mây</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link">Câu chuyện</a></li>
+                    <li><a href="#products" class="nav-link">Đặc sản</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn" aria-label="Giỏ hàng">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="assets/hero_banner.png" alt="Ruộng bậc thang" id="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <span class="hero-subtitle">Tinh Hoa Núi Rừng</span>
+                <h1 class="hero-title">Hương Vị Nguyên Bản <br>Từ Thiên Nhiên</h1>
+                <p class="hero-desc">Trải nghiệm những đặc sản quý hiếm nhất của vùng núi cao Tây Bắc: Gà đen Hmông
+                    thượng hạng, Cá mát suối trong, Cá lăng sông Đà và Rau cải Hmông chuẩn hương vị bản làng.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Khám Phá Ngay</a>
+                    <a href="#about" class="btn btn-outline">Tìm Hiểu Nguồn Gốc</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container features-inner">
+                <div class="feature-item">
+                    <div class="feature-icon">🏅</div>
+                    <h3 class="feature-title">Chuẩn Chất Lượng</h3>
+                    <p class="feature-desc">Tuyển chọn nghiêm ngặt từ tận nông trại đồng bào</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌿</div>
+                    <h3 class="feature-title">Tươi Ngon 100%</h3>
+                    <p class="feature-desc">Vận chuyển trong ngày, giữ trọn vẹn hương vị</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">Hỗ Trợ Bản Làng</h3>
+                    <p class="feature-desc">Tạo sinh kế bền vững cho người dân địa phương</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products section" id="products">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Đặc Sản Cao Cấp</span>
+                    <h2 class="section-title">Tinh Hoa Quy Tụ</h2>
+                    <p class="section-desc">Chúng tôi mang đến cho bạn những trải nghiệm ẩm thực độc bản mà hiếm nơi nào
+                        có được.</p>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1: Rau Cải Hmông -->
+                    <article class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/rau_cai.png" alt="Rau cải Hmông" class="product-img" id="img-rau-cai">
+                            <div class="product-badge badge-fresh">Mới thu hoạch</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Rau Cải Hmông (Rau Mèo)</h3>
+                            <p class="product-short-desc">Vị đắng nhẹ, giòn sừn sựt, ngọt hậu. Trồng hoàn toàn tự nhiên
+                                trên đỉnh sương mù.</p>
+                            <div class="product-footer">
+                                <span class="product-price">45.000đ<span class="product-unit">/kg</span></span>
+                                <button class="btn-icon add-to-cart" aria-label="Thêm vào giỏ">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2: Gà Đen Hmông -->
+                    <article class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/ga_den.png" alt="Gà đen Hmông" class="product-img" id="img-ga-den">
+                            <div class="product-badge badge-premium">Thượng hạng</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Gà Đen Bản Hmông</h3>
+                            <p class="product-short-desc">Thịt đen, xương đen, thả đồi 100%. Nạc dai, giòn ngọt, giàu
+                                dinh dưỡng, món quà quý.</p>
+                            <div class="product-footer">
+                                <span class="product-price">250.000đ<span class="product-unit">/kg</span></span>
+                                <button class="btn-icon add-to-cart" aria-label="Thêm vào giỏ">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3: Cá Mát -->
+                    <article class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/ca_mat.png" alt="Cá Mát" class="product-img" id="img-ca-mat">
+                            <div class="product-badge badge-rare">Đặc sản hiếm</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cá Mát Suối Nguồn</h3>
+                            <p class="product-short-desc">Đánh bắt tự nhiên ở suối đầu nguồn. Thịt dai, ít xương mềm,
+                                thơm ngọt tự nhiên không tanh.</p>
+                            <div class="product-footer">
+                                <span class="product-price">350.000đ<span class="product-unit">/kg</span></span>
+                                <button class="btn-icon add-to-cart" aria-label="Thêm vào giỏ">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4: Cá Lăng -->
+                    <article class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/ca_lang.png" alt="Cá Lăng Sông Đà" class="product-img" id="img-ca-lang">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cá Lăng Sông Đà</h3>
+                            <p class="product-short-desc">Thịt vàng ươm, săn chắc, mỡ béo ngậy mà không ngán. Không có
+                                xương dăm, vô cùng tiện lợi.</p>
+                            <div class="product-footer">
+                                <span class="product-price">280.000đ<span class="product-unit">/kg</span></span>
+                                <button class="btn-icon add-to-cart" aria-label="Thêm vào giỏ">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container grid-2-cols">
+                <div class="about-content">
+                    <span class="section-subtitle">Về Bản Mây</span>
+                    <h2 class="section-title">Sứ mệnh mang đặc sản núi rừng đến gian bếp nhà bạn</h2>
+                    <p>Bản Mây không chỉ là nơi cung cấp nông sản, chúng tôi là cầu nối giữa những nỗ lực canh tác thuận
+                        tự nhiên của người nông dân vùng cao và những bữa ăn an lành của gia đình Việt.</p>
+                    <p>Mỗi sản phẩm đều chứa đựng câu chuyện về sương mù, nắng gió và tình yêu đất đai của bà con các
+                        dân tộc Tây Bắc.</p>
+                    <ul class="about-list">
+                        <li><span>✔</span> Không chất bảo quản, hóa chất độc hại</li>
+                        <li><span>✔</span> Thu mua trực tiếp từ bản làng, không qua trung gian</li>
+                        <li><span>✔</span> Đóng gói cẩn thận, vận chuyển lạnh chuyên nghiệp</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-placeholder">
+                        <img src="assets/about.png" id="img-about" alt="Nông dân Tây Bắc">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo footer-logo">
+                        <span class="logo-icon">🍃</span>
+                        <span class="logo-text">Bản Mây</span>
+                    </a>
+                    <p class="footer-text">Tinh hoa nông sản vùng cao, mang thiên nhiên thanh khiết đến mâm cơm Việt.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Khám Phá</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#products">Sản phẩm</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liên Hệ</h4>
+                    <ul class="footer-links">
+                        <li>SĐT: 0988.xxx.xxx</li>
+                        <li>Email: hello@banmay.vn</li>
+                        <li>Địa chỉ: Thôn XYZ, Vùng Tây Bắc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bản Mây Nông Sản. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
